@@ -41,6 +41,8 @@ const todosTemplate = [
 export const App = () => {
   const [todos, setTodos] = React.useState([]);
 
+  console.log(todos);
+
   return (
     <div className="root">
       <TodosContext.Provider value={{ todos }}>
